@@ -121,13 +121,13 @@ body {
 #imagetext {
   color: #ff724c;
   position: absolute;
-  bottom: -44%;
-  left: 27%;
+  top: 35%;
+  left: 30%;
 }
 
 #imagetext h2 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Oxygen", sans-serif;
 }
 
@@ -143,7 +143,7 @@ body {
 .line {
   text-align: center;
   line-height: 60px;
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   font-weight: 00;
   font-family: sans-serif;
@@ -184,8 +184,8 @@ body {
   }
 
   #imagetext {
-    left: 30%;
-    bottom: -40%;
+    left: 25%;
+    top: 40%;
   }
 }
 
@@ -228,7 +228,7 @@ body {
   }
   #imagetext {
     bottom: 45%;
-    left: 40%;
+    left: 35%;
   }
 }
 
