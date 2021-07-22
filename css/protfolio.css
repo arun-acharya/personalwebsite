@@ -175,6 +175,111 @@ body {
   border-radius: 90px;
 }
 
+/*content*/
+
+#main-content h1 {
+  color: #555;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#main-content h6 {
+  font-size: 1rem;
+  background-color: #ff724c;
+  width: 108px;
+  margin-top: -0.7rem;
+  margin-left: 30rem;
+  text-align: center;
+}
+
+.sub-head {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sub-head span {
+}
+
+.sub-head a {
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 9px;
+}
+
+.sub-head a:hover {
+  background: #eee;
+  color: #6b6b6b;
+}
+.sub-head a:active {
+  background: #ff724c;
+  color: white;
+}
+
+.whole {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  width: 307px;
+  height: auto;
+  position: relative;
+  margin-top: 6px;
+}
+
+#image {
+  display: block;
+  width: 100%;
+}
+
+.img-overlay {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.89);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.img-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.img-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.over-title {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Oxygen", sans-serif;
+  padding: 1rem;
+}
+
+.over-d {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8f8f8f;
+  padding: 1rem;
+}
+
+.over-d .far {
+  font-size: 22px;
+  color: #ff724c;
+  margin-left: 11.2rem;
+}
 /*slider*/
 
 @media (min-width: 410px) {
