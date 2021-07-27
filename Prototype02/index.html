@@ -3,10 +3,12 @@
 <head>
     <title>My website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="Images/topimg.jpg">
+    <link rel="icon" href="image/topimg.jpg">
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+    <link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/0daa28a5d5.js" crossorigin="anonymous"></script>
     <script src="js/index.js" defer></script>
@@ -33,7 +35,7 @@
         
         <div class="brand-title">
             <div data-tilt="">
-                <img  id="logo" src="image/logo.jpg" alt="">
+                <img data-tab-target="#about-me" id="logo" src="image/logo.jpg" alt="">
             </div>
               <h1>Pranav <br> Kattel</h1> 
         </div>
@@ -79,13 +81,14 @@
                 <div class="line">Student</div>
               </div>
             </div>
+            </div>
 
             
             <div id="about-me" data-tab-content=""><!--about me-->
                 <div id="side-border" style="position: absolute;width: 11rem;height: 11rem;border-left: 3px solid #ff724c; border-top: 3px solid #ff724c; left: 2rem; top: 2rem;"></div>     
                 <div class="content-container">
                     <h1>About Me</h1>
-                    <h6 style="background-color: #ff724c;text-align: center;width: 16rem ; padding: 4px; margin: auto; margin-top: -1rem;">Artist,Thinker,Creative Doer</h6>
+                    <h6 style="background-color: #ff724c;text-align: center;width: 16rem ; padding: 4px;; margin-top: -1rem;">Artist,Thinker,Creative Doer</h6>
 
                     <div class="about-top">
                         <div data-tilt="" id="a-logo" class="top-c">
@@ -145,7 +148,7 @@
 
 
                               <div class="service-child text-center">
-                                <img id="service-icon" src="../Images/web_design_icon.png" alt="">
+                                <img id="service-icon" src="image/web_design_icon.png" alt="">
                                 <h3>Web Design</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
@@ -153,7 +156,7 @@
                               </div>
 
                               <div class="service-child text-center">
-                                <img id="service-icon" src="../Images/photography_icon.png" alt="">
+                                <img id="service-icon" src="image/photography_icon.png" alt="">
                                 <h3>Photography</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
@@ -161,7 +164,7 @@
                               </div>
 
                               <div class="service-child text-center">
-                                <img id="service-icon" src="../Images/creativity_icon.png" alt="">
+                                <img id="service-icon" src="image/creativity_icon.png" alt="">
                                 <h3>Creativity</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
@@ -169,7 +172,7 @@
                               </div>
 
                               <div class="service-child text-center">
-                                <img id="service-icon" src="../Images/advetising_icon.png" alt="">
+                                <img id="service-icon" src="image/advetising_icon.png" alt="">
                                 <h3>Advertising</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
@@ -179,6 +182,134 @@
                             </div><!--services end-->
                     </div>
 
+                    <!--clients-->
+                    <div style="margin-top: 1.6rem; margin-bottom: 1.5rem;">
+                      <span style="border-left: 2px solid #ff724c;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Clients</span>
+                      </div>
+
+                      <div class="clients">
+                        <div class="clients-child text-center">
+                           <a href=""> <img class="client-icon" src="image/client_1.png" alt=""></a>
+                        </div>
+                        <div class="clients-child text-center">
+                         <a href=""><img class="client-icon" src="image/client_21.png" alt=""></a> 
+                        </div>
+                        <div class="clients-child text-center">
+                          <a href=""><img class="client-icon" src="image/client_3.png" alt=""></a>
+                        </div>
+                        <div class="clients-child text-center">
+                         <a href=""><img class="client-icon" src="image/client_4.png" alt=""></a> 
+                        </div>
+                        <div class="clients-child text-center">
+                          <a href=""><img class="client-icon" src="image/client_5.png" alt=""></a>
+                        </div>
+                        <div class="clients-child text-center">
+                          <a href=""><img class="client-icon" src="image/client_6.png" alt=""></a>
+                        </div>
+                      </div>
+
+                    </div><!--clinent end-->
+
+                    <!--testimonial-->
+                    <div style="margin-top: 3rem; margin-bottom: 0rem; margin-left: 4rem;">
+                      <span style="border-left: 2px solid #ff724c;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Testimonial</span>
+                      </div>
+
+                    <div class="testimonial">
+                      <div class="testi-child">
+                        <div class="testi-text">
+                          "Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros. Sed sed ipsum sed massa."
+                          <div class="testi-image">
+                            <img class="testi-photo" src="image/testimonial_photo_1.jpg" alt="">
+                            <div style="line-height: 1px; margin-top: 1.7rem; margin-left: 1rem;">
+                                <p style="font-size: 1.5rem; color: #e5e5e5; font-weight: 400; padding-bottom: 1rem;padding-top: 1rem; font-style: normal; font-family: "Oxygen", sans-serif;">Maria Rhichard</p>
+                                <p style="font-size: 1rem; color: #e5e5e5;">LINDRE LUMBER</p>
+                              </div>
+                          </div>
+                        </div>
+                        
+                         
+                      </div>
+
+                      <div class="testi-child">
+                        <div class="testi-text">
+                          "Aliquam congue auctor lectus sed fermentum. Nulla ultricie lacinia egestas."
+                          <div class="testi-image">                              
+                            <img class="testi-photo" src="image/testimonial_photo_2.jpg" alt="">
+                              <div style="line-height: 1px; margin-top: 1.7rem; margin-left: 1rem;">
+                                  <p style="font-size: 16px; color: #e5e5e5; font-weight: 400;  padding-bottom: 1rem;padding-top: 1rem; font-style: normal; font-family: "Oxygen", sans-serif;">John doe</p>
+                                  <p style="font-size: 10px; color: #e5e5e5;">APPLE INC.</p>
+                              </div>
+                          </div>
+                        </div>                            
+                      </div>
+
+                      <div class="testi-child">
+                        <div class="testi-text">
+                          "Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi conva nec ac lorem."
+                          <div class="testi-image">
+                            <img class="testi-photo" src="image/testimonial_photo_3.jpg" alt="">
+                            <div style="line-height: 1px; margin-top: 1.7rem; margin-left: 1rem;">
+                                <p style="font-size: 16px; color: #e5e5e5; font-weight: 400 ;  padding-bottom: 1rem;padding-top: 1rem; font-style: normal; font-family: "Oxygen", sans-serif;">L. McQueen</p>
+                                <p style="font-size: 10px; color: #e5e5e5;">HARMONY HOUSE</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                    </div><!--testi end-->
+                    
+                          <!--FUN FACTS-->
+
+                          <div style="margin-top: 3rem; margin-bottom: 2rem; margin-left: 4rem;">
+                            <span style="border-left: 2px solid #ff724c;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Fun Facts</span>
+                          </div>
+
+                          <div class="fun">
+
+
+                            <div data-tilt="" id="background" class="fun-child">
+                              <div class="text-center">
+                                <i class="far fa-smile"></i>
+                              </div>
+                              <div class="text-center">
+                                <h5>Happy client</h5>
+                                <h2>1,212</h2>
+                              </div>
+                            </div>
+
+                            <div data-tilt="" class="fun-child">
+                              <div class="text-center">
+                                <i class="far fa-clock"></i>
+                              </div>
+                              <div class="text-center">
+                                <h5>Working Hours</h5>
+                                <h2>6,322</h2>
+                              </div>
+                            </div>
+
+                            <div data-tilt="" id="background" class="fun-child">
+                              <div class="text-center">
+                                <i class="fas fa-medal"></i>
+                              </div>
+                              <div class="text-center">
+                                <h5>Award Won</h5>
+                                <h2>12</h2>
+                              </div>
+                            </div>
+
+                            <div data-tilt="" class="fun-child">
+                              <div class="text-center">
+                                <i class="fas fa-mug-hot"></i>
+                              </div>
+                              <div class="text-center">
+                                <h5>Coffee Consumed</h5>
+                                <h2>20,000</h2>
+                              </div>
+                            </div>
+
+                          </div>
                 </div> <!--same-->
             </div><!--about me end-->
 
@@ -194,7 +325,7 @@
                 <div id="side-border" style="position: absolute;width: 11rem;height: 11rem;border-left: 3px solid #ff724c; border-top: 3px solid #ff724c; left: 2rem; top: 2rem;"></div>     
                 <div class="content-container">
                     <h1>Resume</h1>
-                    <h6 style="background-color: #ff724c;text-align: center;width: 14rem ; padding: 4px; margin: auto; margin-top: -1rem;">1 Year of Experience</h6>
+                    <h6 style="background-color: #ff724c;text-align: center;width: 14rem ; padding: 4px;   ; margin-top: -1rem;">1 Year of Experience</h6>
 
 
                     <div class="parent">
@@ -332,24 +463,529 @@
                   </div>
               </div>
           </div>
-      </div>    
-   </div>
-   </div>
+      
                 </div> 
             </div><!--resume end-->
 
+
+            <!--portfolio-->
             <div id="portfolio" data-tab-content="">
                 <div id="side-border" style="position: absolute;width: 11rem;height: 11rem;border-left: 3px solid #ff724c; border-top: 3px solid #ff724c; left: 2rem; top: 2rem;"></div>     
                 <div class="content-container">
-                    
+                  <h1 style="font-weight: bold;">Portfolio</h1>
+                  <h6 style="background-color: #ff724c;text-align: center;width: 14rem ; padding: 4px;   ; margin-top: -1rem;">My Best Work</h6>
+
+                    <div class="wrapper">
+                      <input type="radio" name="slider" id="all" checked>
+                      <input type="radio" name="slider" id="media">
+                      <input type="radio" name="slider" id="illustration">
+                      <input type="radio" name="slider" id="video">
+                      <nav>
+                        <label for="all" class="all" style="margin-right: -1rem;">All</label>
+                        <label for="media" class="media" style="margin-left: -1rem;">Media</label>
+                        <label for="illustration" class="illustration">Illustration</label>
+                        <label for="video" class="video">Video</label>
+                        <div class="slider"></div>
+                      </nav>
+                    </div>
+
+                    <section>
+                      <div id="ct1" class="content1"><!--all-->
+                        <div class="whole">
+
+                          <div  data-tab-target="#port-content" class="child2 bg-info">
+
+                            <img id="image" class="img-fuid" src="image/1.jpg" alt="">
+                           <a href="#">
+                             <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Media <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div data-tab-target="#port-content1" class="child2 bg-primary">
+                            <img id="image" class="img-fuid" src="image/2.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Media <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          <div data-tab-target="#port-content2" class="child2 bg-warning">
+                            <img id="image" class="img-fuid" src="image/3.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Media <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          <div data-tab-target="#port-content3" class="child2 bg-danger">
+                            <img id="image" class="img-fuid" src="image/4.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Video <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          <div data-tab-target="#port-content3" class="child2 bg-dark">
+                            <img id="image" class="img-fuid" src="image/5.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                Video<i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                         
+
+                          <div class="child2 bg-success">
+                            <img id="image" class="img-fuid" src="image/6.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/6.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="child2 bg-info">
+                            <img id="image" class="img-fuid" src="image/7.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/7.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="child2 bg-primary">
+                            <img  id="image" class="img-fuid" src="image/8.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/8.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="child2 bg-warning">
+                            <img id="image" class="img-fuid" src="image/9.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/9.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="child2 bg-warning">
+                            <img id="image" class="img-fuid" src="image/10.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/10.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div class="child2 bg-info">
+                            <img id="image" class="img-fuid" src="image/11.jpg" alt="">
+                            <a data-lightbox="mygallery" href="image/11.jpg">
+                              <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Illustration <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          
+                          <div data-tab-target="#port-content3" class="child2 bg-danger">
+                            <img id="image" class="img-fuid" src="image/12.jpg" alt="">
+                            <div>
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Video <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      </div>
+
+                      <div id="ct2" class="content2"><!--media-->
+
+                        <div class="whole">
+
+                          <div  data-tab-target="#port-content" class="child2 bg-info">
+
+                            <img id="image" class="img-fuid" src="image/1.jpg" alt="">
+                           <a href="#">
+                             <div class="img-overlay">
+                              <div class="over-title">Project name </div><br><br><br><br>
+                              <p class="over-d">
+                                Media <i class="far fa-image"></i>
+                              </p>
+                            </div>
+                            </a>
+                          </div>
+
+                          <div data-tab-target="#port-content1" class="child2 bg-primary">
+                            <img id="image" class="img-fuid" src="image/2.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Media <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          <div data-tab-target="#port-content2" class="child2 bg-warning">
+                            <img id="image" class="img-fuid" src="image/3.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Media <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          </div>
+                      </div>
+                     
+                      <div id="ct3" class="content2"><!--illustration-->
+                        
+                        <div class="whole">
+
+                              <div class="child2 bg-success">
+                                <img id="image" class="img-fuid" src="image/6.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/6.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+    
+                              <div class="child2 bg-info">
+                                <img id="image" class="img-fuid" src="image/7.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/7.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+    
+                              <div class="child2 bg-primary">
+                                <img  id="image" class="img-fuid" src="image/8.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/8.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+    
+                              <div class="child2 bg-warning">
+                                <img id="image" class="img-fuid" src="image/9.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/9.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+    
+                              <div class="child2 bg-warning">
+                                <img id="image" class="img-fuid" src="image/10.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/10.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+    
+                              <div class="child2 bg-info">
+                                <img id="image" class="img-fuid" src="image/11.jpg" alt="">
+                                <a data-lightbox="mygallery" href="image/11.jpg">
+                                  <div class="img-overlay">
+                                  <div class="over-title">Project name </div><br><br><br><br>
+                                  <p class="over-d">
+                                    Illustration <i class="far fa-image"></i>
+                                  </p>
+                                </div>
+                                </a>
+                              </div>
+                              </div>
+                            </div>
+
+                      <div id="ct4" class="content2"><!--video-->
+
+                        <div class="whole">
+                          <div data-tab-target="#port-content3" class="child2 bg-danger">
+                            <img id="image" class="img-fuid" src="image/4.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Video <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                          <div data-tab-target="#port-content3" class="child2 bg-dark">
+                            <img id="image" class="img-fuid" src="image/5.jpg" alt="">
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                Video<i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+                            
+                          <div data-tab-target="#port-content3" class="child2 bg-danger">
+                            <img id="image" class="img-fuid" src="image/12.jpg" alt="">
+                            <div>
+                            <a href="#">
+                              <div class="img-overlay">
+                               <div class="over-title">Project name </div><br><br><br><br>
+                               <p class="over-d">
+                                 Video <i class="far fa-image"></i>
+                               </p>
+                             </div>
+                             </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </section>
+
+                    <!--modal-->
+
+                
                 </div> 
+            </div><!--portfolio end-->
+
+            <div id="port-content" data-tab-content="" ><!--media-->
+                  <div class="port-project">
+                    
+                    <button  data-tab-target="#port-content2" class="btn" id="prev-button" type="button">&#8249;</button>
+              <button  data-tab-target="#port-content1" class="btn" id="next-button" type="button">&#8250;</button>
+                    <button  data-tab-target="#portfolio" class="btn"  id="close-button" type="button">&times;</button>
+                      <h2>Portfolio Project 1</h2>
+                      <div class="project-flex">
+                        <div id="project-video" class="project-flex-child" >
+                          <div class="project-image">
+                            <img style="width: 100%; height: 100%;" src="image/1.jpg" alt="">
+                          </div>
+                          <div class="project-video">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LDU_Txk06tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+
+                        <div id="project-des" class="project-flex-child">
+                          <div style="margin-top: rem; margin-bottom: 2rem;">
+                            <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Description</span>
+                          </div>
+                          <div class="description">
+                              <div><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Pranav Katel</div>
+                              <div><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;<a href="#">www.projectsite.com</a></div>
+                              <div><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;27 july,2021</div>
+                              <p>Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                          </div>  
+                          <div style="margin-top: 2rem; margin-bottom: 3rem;">
+                            <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Technology</span>
+                          </div>
+                          <div class="technology">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>jQuery</span>
+                            <span>Ajax</span>
+                            <span>PHP5</span>
+                          </div>
+                          <div style="margin-top: 3rem; margin-bottom: 2rem;">
+                            <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Share</span>
+                          </div>
+                          <div class="share">
+                            <span id="fb"><a  href=""><i class="fab fa-facebook-f"></i></a></span>
+                            <span id="tt"><a  href=""><i class="fab fa-twitter"></i></a></span>
+                            <span id="wb" ><a href=""><i class="fa fa-dribbble"></i></a></span>
+                          </div>
+                        </div>                    
+
+                      </div>
+
+                  </div>
             </div>
 
-            <div id="contacts" data-tab-content=""><!--contacts-->
+            <div id="port-content1" data-tab-content="" ><!--media-->
+              <div class="port-project">
+                    
+                <button  data-tab-target="#port-content" class="btn" id="prev-button" type="button">&#8249;</button>
+          <button  data-tab-target="#port-content2" class="btn" id="next-button" type="button">&#8250;</button>
+                <button  data-tab-target="#portfolio" class="btn"  id="close-button" type="button">&times;</button>
+                  <h2>Portfolio Project 2</h2>
+                  <div class="project-flex">
+                    <div id="project-video" class="project-flex-child" >
+                      <div class="project-image">
+                        <img style="width: 100%; height: 100%;" src="image/2.jpg" alt="">
+                      </div>
+                      <div class="project-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LDU_Txk06tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+
+                    <div id="project-des" class="project-flex-child">
+                      <div style="margin-top: rem; margin-bottom: 2rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Description</span>
+                      </div>
+                      <div class="description">
+                          <div><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Pranav Katel</div>
+                          <div><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;<a href="#">www.projectsite.com</a></div>
+                          <div><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;27 july,2021</div>
+                          <p>Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                      </div>  
+                      <div style="margin-top: 2rem; margin-bottom: 3rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Technology</span>
+                      </div>
+                      <div class="technology">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>jQuery</span>
+                        <span>Ajax</span>
+                        <span>PHP5</span>
+                      </div>
+                      <div style="margin-top: 3rem; margin-bottom: 2rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Share</span>
+                      </div>
+                      <div class="share">
+                        <span id="fb"><a  href=""><i class="fab fa-facebook-f"></i></a></span>
+                        <span id="tt"><a  href=""><i class="fab fa-twitter"></i></a></span>
+                        <span id="wb" ><a href=""><i class="fa fa-dribbble"></i></a></span>
+                      </div>
+                    </div>                    
+
+                  </div>
+
+              </div>   
+            </div>
+
+            <div id="port-content2" data-tab-content="" ><!--media-->
+              <div class="port-project">
+                    
+                <button  data-tab-target="#port-content1" class="btn" id="prev-button" type="button">&#8249;</button>
+          <button  data-tab-target="#port-content" class="btn" id="next-button" type="button">&#8250;</button>
+                <button  data-tab-target="#portfolio" class="btn"  id="close-button" type="button">&times;</button>
+                  <h2>Portfolio Project 3</h2>
+                  <div class="project-flex">
+                    <div id="project-video" class="project-flex-child" >
+                      <div class="project-image">
+                        <img style="width: 100%; height: 100%;" src="image/3.jpg" alt="">
+                      </div>
+                      <div class="project-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LDU_Txk06tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+
+                    <div id="project-des" class="project-flex-child">
+                      <div style="margin-top: rem; margin-bottom: 2rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Description</span>
+                      </div>
+                      <div class="description">
+                          <div><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Pranav Katel</div>
+                          <div><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;<a href="#">www.projectsite.com</a></div>
+                          <div><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;27 july,2021</div>
+                          <p>Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                      </div>  
+                      <div style="margin-top: 2rem; margin-bottom: 3rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Technology</span>
+                      </div>
+                      <div class="technology">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>jQuery</span>
+                        <span>Ajax</span>
+                        <span>PHP5</span>
+                      </div>
+                      <div style="margin-top: 3rem; margin-bottom: 2rem;">
+                        <span style="border-left: 2px solid #ff724c; padding: 6px 0;"></span> &nbsp; <span style="font-size: 19px; font-weight: 700;  font-family: "Oxygen", sans-serif;">Share</span>
+                      </div>
+                      <div class="share">
+                        <span id="fb"><a  href=""><i class="fab fa-facebook-f"></i></a></span>
+                        <span id="tt"><a  href=""><i class="fab fa-twitter"></i></a></span>
+                        <span id="wb" ><a href=""><i class="fa fa-dribbble"></i></a></span>
+                      </div>
+                    </div>                    
+
+                  </div>
+
+              </div>    
+            </div>
+
+            <div id="port-content3" data-tab-content="" >
+              
+              <button  data-tab-target="#portfolio" class="btn" id="close-button1" type="button">&times;</button>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LDU_Txk06tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+            <!--contacts-->
+            <div id="contacts" data-tab-content="">
                 <div id="side-border" style="position: absolute;width: 11rem;height: 11rem;border-left: 3px solid #ff724c; border-top: 3px solid #ff724c; left: 2rem; top: 2rem;"></div>     
                 <div class="content-container1">
                     <h1>Contact</h1>
-                    <h6 style="background-color: #ff724c;text-align: center;width: 9rem ; padding: 4px; margin: auto; margin-top: -1rem;">Get in Touch</h6>
+                    <h6 id="ch6" style="background-color: #ff724c;text-align: center;width: 9rem; padding: 4px; margin-top: -1rem;">Get in Touch</h6>
                     
                     <div class="contact-p">
                         <div class="contact-c">

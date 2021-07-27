@@ -79,3 +79,58 @@ var tab4 = document.getElementById('btn4')
     tab3.className = "";
  })
 
+ //portfolio
+ var ct1 = document.getElementById('ct1')
+ var ct2 = document.getElementById('ct2')
+ var ct3 = document.getElementById('ct3')
+ var ct4 = document.getElementById('ct4')
+ var bt1 = document.getElementById('all')
+ var bt2 = document.getElementById('media')
+ var bt3 = document.getElementById('illustration')
+ var bt4 = document.getElementById('video')
+
+ bt1.addEventListener('click', () => {
+   ct1.className = "content1";
+   ct2.className = "content2";
+   ct3.className = "content2";
+   ct4.className = "content2";
+})
+
+bt2.addEventListener('click', () => {
+   ct1.className = "content2";
+   ct2.className = "content1";
+   ct3.className = "content2";
+   ct4.className = "content2";
+})
+
+bt3.addEventListener('click', () => {
+   ct1.className = "content2";
+   ct2.className = "content2";
+   ct3.className = "content1";
+   ct4.className = "content2";
+})
+
+bt4.addEventListener('click', () => {
+   ct1.className = "content2";
+   ct2.className = "content2";
+   ct3.className = "content2";
+   ct4.className = "content1";
+})
+
+
+/*
+var closebutton = document.getElementById('close-button')
+var media1 = document.getElementById('port-content')
+
+closebutton.addEventListener('click', () => {
+   media1.style.visibility = "hidden";
+})
+
+/*
+var closebutton3 = document.getElementById('close-button3')
+var media3 = document.getElementById('port-content3')
+
+closebutton3.addEventListener('click', () => {
+   media3.style.visibility = "hidden";
+})
+*/
