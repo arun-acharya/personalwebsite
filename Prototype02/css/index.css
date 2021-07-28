@@ -282,7 +282,7 @@ display: none;
     position: absolute;
     top: 4vh;   
     right: 5vw;
-    left: 16vw;
+    left: 5vw;
     max-width: 130rem;
     margin: auto;
     overflow-x: hidden;
@@ -309,9 +309,7 @@ display: none;
 }
 
 #a-logo {
-  width: 28rem;
-  height: 28rem;
-  margin-top: 5rem;
+
 }
 
 .top-c p {
