@@ -30,6 +30,55 @@ var tab1 = document.getElementById('btn1')
 var tab2 = document.getElementById('btn2')
 var tab3 = document.getElementById('btn3')
 var tab4 = document.getElementById('btn4')
+var tab5 = document.getElementById('service-btn')
+var tab6 = document.getElementById('service-btn1')
+var tab7 = document.getElementById('service-btn2')
+var tab8 = document.getElementById('service-btn3')
+var tab9 = document.getElementById('service-btn4')
+var tab10 = document.getElementById('service-btn5')
+
+tab5.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
+tab6.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
+tab7.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
+tab8.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
+tab9.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
+tab10.addEventListener('click', () => {
+   tab.className = "";
+   ta.className = "";
+   tab1.className = "";
+   tab2.className = "";
+   tab3.className = "active";
+})
 
  tab.addEventListener('click', () => {
     tab.className = "active";
@@ -63,6 +112,8 @@ var tab4 = document.getElementById('btn4')
     tab3.className = "active";
  })
 
+
+
  ta.addEventListener('click', () => {
     tab.className = "";
     ta.className = "active";
@@ -78,6 +129,10 @@ var tab4 = document.getElementById('btn4')
     tab2.className = "";
     tab3.className = "";
  })
+
+
+
+
 
  //portfolio
  var ct1 = document.getElementById('ct1')
