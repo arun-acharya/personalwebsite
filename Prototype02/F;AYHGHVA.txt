@@ -1,0 +1,14 @@
+1 ko cyber [private project, Request Access
+2 ko iot  [private project, Request Access]]
+3 ko robot [private project, Request Access]
+4 ko iot [private project, Request Access]
+5 ko cyber [private project, Request Access]
+6 ko cyber [private project, Request Access]
+
+tech 
+1 ko python, linux, MySQL, bash scripting ,DNS server, Apache, HTML, PHP, CSS
+2 ko pyhton, C/C++, linux, Django, OpenCV, MongoDB,  HTML, PHP, CSS
+3 ko python, C/C++, Beta Flight, Bash Scripting
+4 ko pyhon, c/c++, linux, Bash scripting, MySQL, Apache, HTML, PHP, CSS
+5 ko Solidity, Smart Contract, Apache
+6 ko Python, Bash Scripting
