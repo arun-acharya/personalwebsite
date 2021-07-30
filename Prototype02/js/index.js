@@ -131,6 +131,79 @@ tab10.addEventListener('click', () => {
  })
 
 
+//navbar-mobile
+
+var navbtn = document.getElementById('navbtn')
+var navbtn1 = document.getElementById('navbtn1')
+var navbtn2 = document.getElementById('navbtn2')
+var navbtn3 = document.getElementById('navbtn3')
+var navbtn4 = document.getElementById('navbtn4')
+var navbarmobile = document.getElementById('navbar-mobile')
+var togglebtn = document.getElementById('toggle-button');
+var logo = document.getElementById('logo')
+
+logo.addEventListener('click', () => {
+   togglebtn.click();
+})
+navbtn.addEventListener('click', () => {
+   togglebtn.click();
+})
+navbtn1.addEventListener('click', () => {
+   togglebtn.click();
+})
+navbtn2.addEventListener('click', () => {
+   togglebtn.click();
+})
+navbtn3.addEventListener('click', () => {
+   togglebtn.click();
+})
+navbtn4.addEventListener('click', () => {
+   togglebtn.click();
+})
+
+navbtn.addEventListener('click', () => {
+   navbtn.className = "active1"
+   navbtn1.className = ""
+   navbtn2.className = ""
+   navbtn3.className = ""
+   navbtn4.className = ""
+})
+
+navbtn1.addEventListener('click', () => {
+   navbtn.className = ""
+   navbtn1.className = "active1"
+   navbtn2.className = ""
+   navbtn3.className = ""
+   navbtn4.className = ""
+})
+navbtn2.addEventListener('click', () => {
+   navbtn.className = ""
+   navbtn1.className = ""
+   navbtn2.className = "active1"
+   navbtn3.className = ""
+   navbtn4.className = ""
+})
+navbtn3.addEventListener('click', () => {
+   navbtn.className = ""
+   navbtn1.className = ""
+   navbtn2.className = ""
+   navbtn3.className = "active1"
+   navbtn4.className = ""
+})
+navbtn4.addEventListener('click', () => {
+   navbtn.className = ""
+   navbtn1.className = ""
+   navbtn2.className = ""
+   navbtn3.className = ""
+   navbtn4.className = "active1"
+})
+logo.addEventListener('click', () => {
+   navbtn.className = ""
+   navbtn1.className = "active1"
+   navbtn2.className = ""
+   navbtn3.className = ""
+   navbtn4.className = ""
+})
 
 
 
