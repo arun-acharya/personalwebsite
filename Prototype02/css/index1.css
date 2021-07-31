@@ -32,6 +32,9 @@ display: none;
   overflow-x: hidden;
     overflow-y: scroll;
 }
+#aboutme-sub{
+  margin-left: 40rem;
+}
 
 #logo {
   margin-top: 2rem;
@@ -138,6 +141,11 @@ display: none;
     height: 7rem;
     border: 2px solid white;
     border-radius: 50%;
+   
+  }
+
+  #portfolio-sub {
+    margin-left: 53rem;
   }
   
   .brand-title-pc {
@@ -1805,5 +1813,12 @@ h6 {
     height: auto;
     margin-top: 2rem;
     
+  }
+  #aboutme-sub{
+    margin-left: 50rem;
+  }
+
+  #portfolio-sub {
+    margin-left: 64rem;
   }
 }
