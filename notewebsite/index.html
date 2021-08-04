@@ -4,7 +4,7 @@
   <title>NOTE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -25,20 +25,63 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+            
+            <li class="nav-item dropdown" >
+              <a id="navbar-links" class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#HTML">HTML</a>
+              <a id="navbar-links" class="nav-link" href="#HTML">HTML</a>
+              <a style="position: absolute; top: 0%;left: 80%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#HTML">Introduction</a>
+                <a class="dropdown-item" href="#example-html">Example</a>
+                <a class="dropdown-item" href="#tags-html">HTML Tags</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CSS</a>
+              <a id="navbar-links" class="nav-link" href="#CSS">CSS</a>
+              <a style="position: absolute; top: 0%;left: 80%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#CSS">Introduction</a>
+                <a class="dropdown-item" href="#example-css">Example</a>
+                <a class="dropdown-item" href="#ref-css">CSS Reference</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bootstrap</a>
+              <a id="navbar-links" class="nav-link" href="#BOOTSTRAP">Bootstrap</a>
+              <a style="position: absolute; top: 0%;left: 90%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#CSS">Introduction</a>
+                <a class="dropdown-item" href="#example-css">Example</a>
+                <a class="dropdown-item" href="#ref-css">CSS Reference</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Javascript</a>
+              <a id="navbar-links" class="nav-link" href="#JS">Javascript</a>
+              <a style="position: absolute; top: 0%;left: 90%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#CSS">Introduction</a>
+                <a class="dropdown-item" href="#example-css">Example</a>
+                <a class="dropdown-item" href="#ref-css">CSS Reference</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a id="navbar-links" class="nav-link" href="#">Photoshop</a>
+              <a style="position: absolute; top: 0%;left: 90%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#CSS">Introduction</a>
+                <a class="dropdown-item" href="#example-css">Example</a>
+                <a class="dropdown-item" href="#ref-css">CSS Reference</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a id="navbar-links" class="nav-link" href="#">Illustrator</a>
+              <a style="position: absolute; top: 0%;left: 90%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#CSS">Introduction</a>
+                <a class="dropdown-item" href="#example-css">Example</a>
+                <a class="dropdown-item" href="#ref-css">CSS Reference</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -46,6 +89,7 @@
 
 </section>
 </div>
+
 <!--slider-->
 
 <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -54,6 +98,8 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     </ol>
 
     <div class="carousel-inner">
@@ -70,7 +116,7 @@
         <img class="img-fluid" src="image/css_img.png" src="..." alt="Second slide">
         <div class="carousel-caption">
           <h1 class="display-2">CSS</h1>
-        <a href="#"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
+        <a href="#CSS"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
           <a href="#"><button type="button" class="btn btn-outline-light btn-primary">Ask</button></a>  
         </div>
       </div>
@@ -79,7 +125,7 @@
         <img class="img-fluid" src="image/bootstrap_img.png" src="..." alt="Third slide">
         <div class="carousel-caption">
           <h1 class="display-2">Bootstrap</h1>
-          <a href="#"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
+          <a href="#BOOTSTRAP"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
           <a href="#"><button type="button" class="btn btn-outline-light btn-primary">Ask</button></a>  
         </div>
       </div>
@@ -88,6 +134,24 @@
         <img class="slider-image" src="image/js_img.png" src="..." alt="Third slide">
         <div class="carousel-caption">
           <h1 class="display-2">Javascript</h1>
+          <a href="#JS"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
+          <a href="#"><button type="button" class="btn btn-outline-light btn-primary">Ask</button></a>  
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="slider-image" src="image/photoshop_img.jpg" src="..." alt="Third slide">
+        <div class="carousel-caption">
+          <h1 class="display-2">Photoshop</h1>
+          <a href="#"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
+          <a href="#"><button type="button" class="btn btn-outline-light btn-primary">Ask</button></a>  
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="slider-image" src="image/illustrator_img.png" src="..." alt="Third slide">
+        <div class="carousel-caption">
+          <h1 class="display-2">Illustrator</h1>
           <a href="#"><button type="button" class="btn btn-outline-light btn-lg">Learn Now</button></a>  
           <a href="#"><button type="button" class="btn btn-outline-light btn-primary">Ask</button></a>  
         </div>
@@ -113,44 +177,52 @@
       </p>
     </div>
         
-    <div class="icons">
+    <div style="margin-bottom: -5rem;" class="icons">
       <div class="icon-child">
         <a href="#HTML"><img class="img-fluid" src="image/html-5.png" alt=""></a>
         <figcaption class="text-center">HTML5</figcaption>
       </div>
       <div class="icon-child">
-        <a href="#"><img class="img-fluid" src="image/css-3.png" alt=""></a>
+        <a href="#CSS"><img class="img-fluid" src="image/css-3.png" alt=""></a>
         <figcaption class="text-center">CSS3</figcaption>
       </div>
       <div class="icon-child">
-        <a href="#"><img class="img-fluid" src="image/bootstrap-4.png" alt=""></a>
+        <a href="#BOOTSTRAP"><img class="img-fluid" src="image/bootstrap-4.png" alt=""></a>
         <figcaption class="text-center">Bootstrap</figcaption>
       </div>
       <div class="icon-child">
-        <a href="#"><img class="img-fluid" src="image/javascript-icon.jpg" alt=""></a>
+        <a href="#JS"><img class="img-fluid" src="image/javascript-icon.jpg" alt=""></a>
         <figcaption class="text-center">Javascript</figcaption>
+      </div>
+      <div class="icon-child">
+        <a href="#"><img class="img-fluid" src="image/photoshop.png" alt=""></a>
+        <figcaption class="text-center">Photoshop</figcaption>
+      </div>
+      <div class="icon-child">
+        <a href="#"><img class="img-fluid" src="image/illustrator.png" alt=""></a>
+        <figcaption class="text-center">Illustrator</figcaption>
       </div>
     </div>
 
-
-    <div id="HTML" class="HTML">
-      <div class="html-top">
-        <h2 class="text-center">HTML</h2>
+  
+    <div style="margin-top: 4rem; padding-top: 3rem;" id="HTML" class="HTML">
+      <div  class="title-top">
+        <h2  class="text-center">HTML</h2>
       </div>
       <div class="container">
 
-        <h4>
+        <h4 >
           What is HTML?
         </h4>
           <ul>
             <li>HTML stands for Hyper Text Markup Language</li>
             <li>HTML is the standard markup language for creating Web pages</li>
-            <li>HTML describes the structure of a Web page</li>
+            <li id="example-html">HTML describes the structure of a Web page</li>
             <li>HTML consists of a series of elements</li>
             <li>HTML elements tell the browser how to display the content</li>
           </ul>
 
-        <h5>Example</h5>
+        <h5 >Example</h5>
           <div class="code-eg">        
                     <div class="w3-code notranslate htmlHigh">
                         <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
@@ -168,18 +240,19 @@
                                         style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p
                                     <span
                                         class="tagcolor" style="color:mediumblue">&gt;</span>
+                                        
                                         </span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
-                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html
+                                        <div id="tags-html"></div>       <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html
                                         <span
                                             class="tagcolor" style="color:mediumblue">&gt;</span>
                                             </span>
                     </div>
           </div><!--code end-->
         
-          <div class="html-tags">
+          <div  style="margin-bottom: -5rem;" class="html-tags">
             <h4>HTML tags</h4>
             <table class="table table-bordered table-hover">
-              <caption>List of common tags</caption>
+              <caption>List of important tags</caption>
               <tr>
                 <th scope="col">Tag</th>
                 <th scope="col">Description</th>
@@ -259,10 +332,498 @@
     </div>
 
     
+      <div style="padding-top: 4rem;" id="CSS" class="CSS">
+        <div style="background-color: #2196f3;" class="title-top">
+          <h2 class="text-center">CSS</h2>
+        </div>
+
+      <div class="container">
+            <h4>
+              What is CSS?
+            </h4>
+              <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li id="example-css">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+              </ul>
+              <h5>Example</h5>
+
+          <div class="code-eg">
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                                                                body
+              <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>                        lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                                              <br>h1
+                                              <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                      &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br> &nbsp;&nbsp;text-align
+                                              <span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                              </span><span class="cssdelimitercolor" style="color:black">}</span><br><br> p
+                                           <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                        &nbsp;
+                      font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> verdana<span class="cssdelimitercolor" style="color:black">;</span></span><br> &nbsp;&nbsp;font-size
+                      <div id="ref-css"></div>                               <span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                              </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+              </div>
+          </div>
+          
+          <div style="margin-bottom: -5rem;" class="css-reference">
+            <h4>CSS Reference</h4>
+          
+                <table class="table table-bordered table-hover">
+                  <caption>List of important reference</caption>
+                  <tr>
+                    <th scope="col">CSS</th>
+                    <th scope="col">Example description</th>
+                  </tr>
+                  <tr>
+                    <td>color</td>
+                    <td>Sets the color of text</td>
+                  </tr>
+                  <tr>
+                    <td>display</td>
+                    <td>Specifies how a certain HTML element should be displayed</td>
+                  </tr>
+                  <tr>
+                    <td>padding</td>
+                    <td>Add space between its content and its border</td>
+                  </tr>
+                  <tr>
+                    <td>margin</td>
+                    <td>Defines the space around an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td>border</td>
+                    <td>the width, line style, and color of the border of a box</td>
+                  </tr>
+                  <tr>
+                    <td>font</td>
+                    <td>A shorthand property that defines font-related properties</td>
+                  </tr>
+                  <tr>
+                    <td>text-decoration</td>
+                    <td>	Specifies the decoration added to text</td>
+                  </tr>
+                  <tr>
+                    <td>text-align</td>
+                    <td>Specifies the horizontal alignment of text</td>
+                  </tr>
+                  <tr>
+                    <td>line-height</td>
+                    <td>Sets the line height</td>
+                  </tr>
+                  <tr>
+                    <td>justify-content</td>
+                    <td>Specifies the alignment br when the items do not use all available space</td>
+                  </tr>
+                  <tr>
+                    <td>@media</td>
+                    <td>	Sets the style rules for different media types/devices/sizes</td>
+                  </tr>
+                </table>
+             
+          </div>
+      </div>
+      </div>
+
+      <div style="padding-top: 5rem;" id="BOOTSTRAP" class="BOOTSTRAP">
+        <div style="background-color: #4603ab;margin-top: 1rem;" class="title-top">
+          <h2 class="text-center">Bootstrap</h2>
+        </div>
+        <div class="container">
+          <h4>
+            What is Bootstrap?
+          </h4>
+          <ul>
+              <li>
+                Bootstrap is a free and open-source tool collection for creating responsive websites and web applications
+              </li>
+              <li>
+                It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+              </li>
+          </ul>
+          <h4>
+            Why Bootstrap?
+          </h4>
+          <ul>
+            <li>
+              Faster and Easier Web Development.
+            </li>
+            <li>
+              It creates Platform-independent web pages.
+            </li>
+            <li>
+              It creates Responsive Web-pages.
+            </li>
+            <li>
+              It designed to be responsive to mobile devices too.
+            </li>
+            <li>
+              It is Free! Available on <a style="text-decoration: underline; color: #222;" href="https://getbootstrap.com/">www.getbootstrap.com</a> 
+            </li>
+          </ul>
+
+          <h5>Example</h5>
+          <div class="code-eg">
+            <div class="w3-code notranslate htmlHigh">
+              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="jumbotron text-center"</span></span>
+              <span
+                  class="tagcolor" style="color:mediumblue">&gt;</span>
+                  </span><br>&nbsp;&nbsp;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Bootstrap Page<span class="tagnamecolor"
+                      style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p
+                  <span
+                      class="tagcolor" style="color:mediumblue">&gt;</span>
+                      </span>Resize this responsive page to see the effect!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                      <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div
+                      <span
+                          class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="container"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div
+                          <span
+                              class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div
+                              <span
+                                  class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                                      style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Column 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3
+                                  <span
+                                      class="tagcolor" style="color:mediumblue">&gt;</span>
+                                      </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lorem
+                                      ipsum dolor..
+                                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                                      <span
+                                          class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div
+                                          <span
+                                              class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                                                  style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Column 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3
+                                              <span
+                                                  class="tagcolor" style="color:mediumblue">&gt;</span>
+                                                  </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lorem
+                                                  ipsum dolor..
+                                                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                                                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                                                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span>
+                                                  <span
+                                                      class="tagcolor" style="color:mediumblue">&gt;</span>
+                                                      </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Column
+                                                      3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lorem ipsum dolor..
+                                                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                                                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                                                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                                                          style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+          </div>
+
+          <div style="margin-bottom: -5rem;" class="bootstrap-classes">
+            <h4>
+              Bootstrap Class
+            </h4>
+            <table class="table table-bordered table-hover">
+              <caption>List of important bootstrap classes</caption>
+              <tr>
+                <th width="20%" scope="col">Class</th>
+                <th scope="col">Description</th>
+              </tr>
+              <tr>
+                <td>.text-center</td>
+                <td>Center-aligns text</td>
+              </tr>
+              <tr>
+                <td>.text-justify</td>
+                <td>Indicates justified text</td>
+              </tr>
+              <tr>
+                <td>.text-left</td>
+                <td>Aligns the text to the left</td>
+              </tr>
+              <tr>
+                <td>.text-right</td>
+                <td>Aligns the text to the right</td>
+              </tr>
+              <tr>
+                <td>.list-group</td>
+                <td>	Creates a bordered list group for &lt;li&gt; elements</td>
+              </tr>
+              <tr>
+                <td>.list-group-item</td>
+                <td>Creates a list group heading (used on other elements besides &lt;li&gt;)</td>
+              </tr>
+              <tr>
+                <td>.list-unstyled</td>
+                <td>Removes all default list-style</td>
+              </tr>
+              <tr>
+                <td>.bg-color</td>
+                <td>Add background to an element</td>
+              </tr>
+              <tr>
+                <td>.-info</td>
+                <td>Color lightblue</td>
+              </tr>
+              <tr>
+                <td>.-danger</td>
+                <td>Color red</td>
+              </tr>
+              <tr>
+                <td>.-primary</td>
+                <td>Color blue</td>
+              </tr>
+              <tr>
+                <td>.-success</td>
+                <td>Color green</td>
+              </tr>
+              <tr>
+                <td>.-warning</td>
+                <td>Color yellow</td>
+              </tr>
+              <tr>
+                <td>.-secondary</td>
+                <td>Color grey</td>
+              </tr>
+              <tr>
+                <td>.img-fluid</td>
+                <td>Shapes an image to a div</td>
+              </tr>
+              <tr>
+                <td>.img-rounded</td>
+                <td>Adds rounded corners to an image</td>
+              </tr>
+              <tr>
+                <td>.container</td>
+                <td>Fixed width container with widths determined by screen sites.</td>
+              </tr>
+              <tr>
+                <td>.col</td>
+                <td>Responsive grid (span 1-12 column).</td>
+              </tr>
+              <tr>
+                <td>.row</td>
+                <td>Container for responsive columns</td>
+              </tr>
+              <tr>
+                <td>.navbar</td>
+                <td>Creates a navigation bar</td>
+              </tr>
+              <tr>
+                <td>.dropdown</td>
+                <td>Creates a toggleable menu that allows the user to choose one value from a predefined list</td>
+              </tr>
+              <tr>
+                <td>.btn</td>
+                <td>Creates a basic button</td>
+              </tr>
+              <tr>
+                <td>jumbotron</td>
+                <td>Creates a padded grey box with rounded corners that enlarges the font sizes of the text inside it. Creates a big box for calling extra attention to some special content or information</td>
+              </tr>
+              <tr>
+                <td>.carousel</td>
+                <td>Creates a carousel (slideshow)</td>
+              </tr>
+              <tr>
+                <td>.breadcrumb</td>
+                <td>A pagination. Indicates the current page's location within a navigational hierarchy</td>
+              </tr>
+              <tr>
+                <td>.table</td>
+                <td>Adds basic styling to a table (padding, bottom borders, etc)</td>
+              </tr>
+              <tr>
+                <td>.table-bordered</td>
+                <td>Adds borders on all sides of the table and cells</td>
+              </tr>
+              <tr>
+                <td>.form-group</td>
+                <td>Container for form input and label</td>
+              </tr>
+              <tr>
+                <td>.alert</td>
+                <td>Creates an alert message box</td>
+              </tr>
+              <tr>
+                <td>.modal</td>
+                <td>Identifies the content as a modal and brings focus to it</td>
+              </tr>
+              <tr>
+                <td>.pagination</td>
+                <td>Creates a pagination</td>
+              </tr>
+              <tr>
+                <td>.embed-responsive	</td>
+                <td>	Container for embedded content. Makes videos or slideshows scale properly on any device</td>
+              </tr>
+              <tr>
+                <td>.embed-responsive-16by9</td>
+                <td>Container for embedded content. Creates an 16:9 aspect ratio embedded content</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 6rem;" id="JS" class="JS">
+        <div style="background-color: #ffda3e;margin-top: 1rem;" class="title-top">
+          <h2 class="text-center">Javascript</h2>
+        </div>
+        <h4>
+          What is Javascript?
+        </h4>
+        <ul>
+          <li>         	
+              JavaScript is the Programming Language for the Web.
+          </li>
+          <li>
+            JavaScript can update and change both HTML and CSS.
+          </li>
+          <li>
+            JavaScript can calculate, manipulate and validate data.
+          </li>
+        </ul>
+      </div>
+      <h5>
+        Example
+      </h5>
+      <div  style="padding-top: 1rem;padding-bottom: 1rem; margin-right: 100rem;" class="code-eg container-fluid">
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello JavaScript"</span>;
+                                </span>
+      </div>
+
+
+      </div>
+
+      <div class="js-datatype">
+        <h4>
+          Javascript Data Types
+        </h4>
+        <table class="table table-bordered table-hover">
+          <caption>List of javascript datatypes</caption>
+          <tr>
+            <th>Data Types</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>String</td>
+            <td>represents textual data</td>
+            <td>'hello', "hello world!" etc</td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>an integer or a floating-point number</td>
+            <td>3, 3.234, 3e-2 etc.</td>
+          </tr>
+          <tr>
+            <td>BigInt</td>
+            <td>an integer with arbitrary precision</td>
+            <td>900719925124740999n , 1n etc.</td>
+          </tr>
+          <tr>
+            <td>Boolean</td>
+            <td>Any of two values: true or false</td>
+            <td>true and false</td>
+          </tr>
+          <tr>
+            <td>undefined</td>
+            <td>a data type whose variable is not initialized</td>
+            <td>let a;</td>
+          </tr>
+          <tr>
+            <td>null</td>
+            <td>denotes a null value</td>
+            <td>let a = null;</td>
+          </tr>
+          <tr>
+            <td>Symbol</td>
+            <td>data type whose instances are unique and immutable</td>
+            <td>let value = Symbol('hello');</td>
+          </tr>
+          <tr>
+            <td>Object</td>
+            <td>key-value pairs of collection of data</td>
+            <td>let student = { };</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="js-operators">
+        <h4>
+          Javascript Operators
+        </h4>
+        <table class="table table-bordered table-hover">
+          <caption>List of important bootstrap classes</caption>
+          <tr>
+            <th width="20%">Javascript Operators</th>
+            <th>Uses</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Arithmetic Operators</td>
+            <td>Used to perform arithmetic between variables and/or values.</td>
+            <td>+, -, *, /, ++, %, --</td>
+          </tr>
+          <tr>
+            <td>Assignment Operators</td>
+            <td>Used to assign values to JavaScript variables.</td>
+            <td>=, +=, -=, *=, /=, %=</td>
+          </tr>
+          <tr>
+            <td>String Operators</td>
+            <td>Used to concatenate (add) strings.</td>
+            <td>+, +=</td>
+          </tr>
+          <tr>
+            <td>Comparison Operators</td>
+            <td>Used in logical statements to determine equality or difference between variables or values.</td>
+            <td>==, ===, !=, !==, >, <, >=, <=</td>
+          </tr>
+          <tr>
+            <td>Conditional Operator</td>
+            <td>Assigns a value to a variable based on a condition.</td>
+            <td>variablename = (condition) ? value1:value2</td>
+          </tr>
+          <tr>
+            <td>Logical Operators</td>
+            <td>Used to determine the logic between variables or values.</td>
+            <td>&&, ||, !</td>
+          </tr>
+          <tr>
+            <td>Bitwise Operators</td>
+            <td>Convert any numeric operand in the operation into a 32 bit number.</td>
+            <td>&, |, ~, ^, <<, >></td>
+          </tr>
+        </table>
+      </div>
+
+      <h4>Javascript Conditional Statement</h4>
+      <div style="margin-left: 1rem;">
+        <h6 > In JavaScript we have the following conditional statements:</h6>
+      <ul>
+        <li>
+          Use "if" to specify a block of code to be executed, if a specified condition is true
+        </li>
+        <li>
+          Use "else" to specify a block of code to be executed, if the same condition is false
+        </li>
+        <li>
+          Use "else" if to specify a new condition to test, if the first condition is false
+        </li>
+        <li>
+          Use "switch" to specify many alternative blocks of code to be executed
+        </li>
+      </ul>
+      <h5 style="margin-top: 1.3rem;">The if Statement</h5>
+      <h6>Syntax</h6>
+      <div class="js-code">
+        <div class="w3-code w3-border notranslate jsHigh"><span class="jscolor" style="color:black"><div>
+          <span class="jskeywordcolor" style="color:mediumblue">if</span> (<i>condition</i>) {<br><span class="jsnumbercolor" style="color:red">
+          </span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">//<em>&nbsp; block of code to be executed if the condition is true<br></em></span><em><span class="jsnumbercolor" style="color:red">
+          </span> </em>}
+                          </div>
+                          </span>
+                      </div>
+      </div>
+      </div>
       
-    
-        
- 
-  </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

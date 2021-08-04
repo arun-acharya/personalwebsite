@@ -10,7 +10,7 @@ body {
 }
 
 #navbarNav li {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   font-size: 1.1rem;
   font-weight: 400;
   position: relative;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-  background-color: whitesmoke;
+  background-color: #e7e9eb;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -40,20 +40,24 @@ body {
   background-color: #183a9e;
   transition: all 0.2s linear;
 }
-#navbarNav li a:hover:before {
+#navbarNav li #navbar-links:hover:before {
   width: 85%;
 }
-#navbarNav li a.active::before {
+#navbarNav li #navbar-links.active::before {
   width: 85%;
 }
 
-#navbarNav li a:hover {
+#navbarNav li #navbar-links:hover {
   color: black;
   transition: all 0.2s linear;
 }
-#navbarNav li a.active {
+#navbarNav li #navbar-links.active {
   color: black;
   transition: all 0.2s linear;
+}
+
+#navbarDropdownMenuLink:hover {
+  color: black;
 }
 
 /*slider*/
@@ -80,7 +84,8 @@ body {
 }
 
 .btn-primary {
-  padding: 0.7rem 3rem;
+  padding: 0.8rem 3rem;
+  background-color: blue;
 }
 
 .btn-primary:hover {
@@ -107,8 +112,8 @@ body {
   margin-bottom: 4rem;
 }
 .icon-child {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   margin-top: 2rem;
 }
 
@@ -123,16 +128,16 @@ body {
 
 /*html*/
 
-.html-top {
-  width: 40vw;
+.title-top {
+  width: 40rem;
   color: white;
-  background: #183a9e;
+  background: #fc490b;
   /* border: 2px solid black; */
   border-radius: 0 20px 20px 0;
   margin-bottom: 1rem;
 }
 
-.html-top h2 {
+.title-top h2 {
   margin: auto;
 }
 
@@ -144,22 +149,27 @@ body {
   border-radius: 10px;
   margin-bottom: 2rem;
 }
+/*js*/
 
+.js-code {
+  padding: 1rem;
+  border: px solid #e7e9eb;
+}
 /*media-quaries*/
 
 @media (min-width: 1200px) {
-  .html-top {
-    margin-top: 6rem;
+  .title-top {
+    margin-top: 3rem;
   }
 }
 
 @media (max-width: 990px) {
   /*for ham bar*/
-  #navbarNav li a.active::before {
+  #navbarNav li #navbar-links.active::before {
     width: 10%;
     left: 0;
   }
-  #navbarNav li a:hover:before {
+  #navbarNav li #navbar-links:hover:before {
     width: 10%;
     left: 0;
   }
@@ -167,8 +177,8 @@ body {
 
 @media (max-width: 1200px) {
   .icon-child {
-    width: 12rem;
-    height: 12rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
 
@@ -188,19 +198,20 @@ body {
   }
 
   .icon-child {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .icons figcaption {
     font-size: 1rem;
   }
-  .html-top h2 {
+  .title-top h2 {
     font-size: 1.5rem;
   }
 
-  /* .html-top {
-    width: 20rem; */
+  .title-top {
+    width: 20rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -220,15 +231,15 @@ body {
 
   .btn-primary {
     background-color: ;
-    padding: 0.5rem 2rem;
+    padding: 0.6rem 2rem;
   }
 
   .icons {
     margin-top: 0rem;
   }
   .icon-child {
-    width: 5rem;
-    height: 5rem;
+    width: 6.1rem;
+    height: 6.1rem;
   }
 
   .icons figcaption {
@@ -259,5 +270,25 @@ body {
   #navbarNav li a:hover:before {
     width: 30%;
     left: 0;
+  }
+
+  .title-top {
+    width: 17rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  .code-eg {
+    padding-left: 0.5rem;
+  }
+
+  span {
+    font-size: 0.8rem;
   }
 }
