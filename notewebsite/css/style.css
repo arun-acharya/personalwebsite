@@ -10,16 +10,21 @@ body {
 }
 
 #navbarNav li {
-  margin-right: 1.5rem;
+  margin-right: 1.2rem;
   font-size: 1.1rem;
   font-weight: 400;
   position: relative;
 }
 .navbar-brand {
-  font-size: 2.3rem;
-  font-weight: 500;
+  width: 4rem;
+  height: 4rem;
+  padding: 2px;
 }
-
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
 .navbar {
   background-color: #e7e9eb;
   padding-top: 0;
@@ -40,6 +45,28 @@ body {
   background-color: #183a9e;
   transition: all 0.2s linear;
 }
+#navbarNav li .navli1::before {
+  background-color: #fc490b;
+}
+#navbarNav li .navli2::before {
+  background-color: #2196f3;
+}
+#navbarNav li .navli3::before {
+  background-color: #4603ab;
+}
+#navbarNav li .navli4::before {
+  background-color: #ffda3e;
+}
+#navbarNav li .navli5::before {
+  background-color: #30a8ff;
+}
+#navbarNav li .navli6::before {
+  background-color: #f9a431;
+}
+#navbarNav li .navli7::before {
+  background-color: blue;
+}
+
 #navbarNav li #navbar-links:hover:before {
   width: 85%;
 }
@@ -155,7 +182,98 @@ body {
   padding: 1rem;
   border: px solid #e7e9eb;
 }
+
+/*difference*/
+#difference-table {
+  width: 65vw;
+  margin: auto;
+}
+
+#difference-table td {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+#img-2 {
+  margin-left: -1rem;
+}
+
+#img-1 {
+  margin-left: -2rem;
+}
+#ps-row {
+  background-color: #30a8ff;
+}
+#il-row {
+  background-color: #f9a431;
+}
+.table-img {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+}
+
+.borderless td,
+.borderless th {
+  border: none;
+}
+
+/*contacts*/
+.contact-list ul {
+  list-style-type: none;
+}
+.Contacts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: blue;
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+}
+.contact-child {
+  color: white;
+  width: 35rem;
+  height: auto;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.contact-child {
+}
+
+#form-name {
+  background-color: white;
+  border-radius: 0;
+  height: 2.5rem;
+  border: 1px solid blue;
+  font-size: 0.9rem;
+  color: black;
+}
+.contact-child form {
+  line-height: 0.7rem;
+  width: auto;
+}
+
+.contact-child button:hover {
+  background-color: rgb(0, 0, 141);
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+}
+
+.contact-list {
+  line-height: 2.2rem;
+}
 /*media-quaries*/
+
+@media (max-width: 1500px) {
+  #img-2 {
+    margin-left: 2rem;
+  }
+
+  #img-1 {
+    margin-left: -4rem;
+  }
+}
 
 @media (min-width: 1200px) {
   .title-top {
@@ -183,6 +301,16 @@ body {
 }
 
 @media (max-width: 700px) {
+  .table-img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    margin-left: -1rem;
+  }
+  #difference-table {
+    width: auto;
+    border: 2px solid white;
+  }
   .carousel-caption h1 {
     font-size: 3rem;
   }
@@ -214,7 +342,31 @@ body {
   }
 }
 
+@media (max-width: 625px) {
+  .navbar-brand {
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+  }
+
+  .contact-child form {
+    width: 27rem;
+  }
+}
+
 @media (max-width: 450px) {
+  .contact-child form {
+    width: 90vw;
+  }
+
+  .contact-child {
+    margin-left: 1rem;
+  }
+  .table-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   .carousel-caption {
     position: absolute;
     bottom: -38%;
@@ -263,11 +415,11 @@ body {
     font-size: 0.9rem;
   }
 
-  #navbarNav li a.active::before {
+  #navbarNav li #navbar-links.active::before {
     width: 30%;
     left: 0;
   }
-  #navbarNav li a:hover:before {
+  #navbarNav li #navbar-links:hover:before {
     width: 30%;
     left: 0;
   }
@@ -290,5 +442,13 @@ body {
 
   span {
     font-size: 0.8rem;
+  }
+
+  #img-2 {
+    margin-left: -1rem;
+  }
+
+  #img-1 {
+    margin-left: -1rem;
   }
 }
