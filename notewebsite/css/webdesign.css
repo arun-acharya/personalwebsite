@@ -3,6 +3,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 /*navbar*/
@@ -75,55 +76,8 @@ body {
 .top-text p {
   /* margin: 1rem 2rem; */
 }
-/*content*/
-.content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.content-child {
-  width: 22rem;
-  height: 33rem;
-  border: 2px solid whitesmoke;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-.content .content-text {
-  padding: 1rem;
-  line-height: 1.5rem;
-}
 
-.content a {
-  color: black;
-  text-decoration: none;
-}
-
-.content-child:hover {
-  border: 2px solid blue;
-  box-shadow: 1px 1px 10px 1px rgb(124, 115, 115);
-  transform: scale(1.01);
-  transition: all 0.1s;
-}
-
-.content-child:hover .content-text h4 {
-  color: blue;
-  transition: all 0.1s;
-}
-
-.content p {
-  font-size: 0.8rem;
-}
-
-#C-R {
-  visibility: hidden;
-}
-
-.content-child:hover #C-R {
-  visibility: visible;
-  transition: all 0.1s;
-}
 /*icons*/
-
 .icons {
   margin-top: 2rem;
   justify-content: space-around;
@@ -256,6 +210,60 @@ body {
 .contact-list {
   line-height: 2.2rem;
 }
+
+/*WEbd esigning*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.topimage {
+  background-image: url(../image/webdesign_img.jpg);
+  width: 100vw;
+  height: 45rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.top-text {
+  position: absolute;
+  width: 100vw;
+  top: 26%;
+}
+
+.container {
+}
+.topimage h1 {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.navigation-menu {
+  position: sticky;
+}
+
 /*media-quaries*/
 
 @media (max-width: 1500px) {
@@ -274,16 +282,6 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .content-child {
-    width: 17rem;
-    height: 33rem;
-    border: 2px solid whitesmoke;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-}
-
 @media (max-width: 990px) {
   /*for ham bar*/
   #navbarNav li #navbar-links.active::before {
@@ -294,15 +292,9 @@ body {
     width: 10%;
     left: 0;
   }
-  .content-child {
-    width: 15rem;
-    height: 33rem;
-    border: 2px solid whitesmoke;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  .content {
-    margin-bottom: -35rem;
+  .topimage {
+    height: 30rem;
+    background-attachment: unset;
   }
 }
 @media (min-width: 990px) {
@@ -325,6 +317,10 @@ body {
     position: absolute;
     margin-left: -1rem;
   }
+  .topimage h1 {
+    font-size: 3.5rem;
+  }
+
   #difference-table {
     width: auto;
     border: 2px solid white;
@@ -373,6 +369,21 @@ body {
 }
 
 @media (max-width: 450px) {
+  ol {
+    margin-left: -1rem;
+  }
+  h1 {
+    font-size: 130%;
+  }
+
+  .topimage h1 {
+    font-size: 2.5rem;
+  }
+  .topimage {
+    height: 20rem;
+    background-attachment: unset;
+  }
+
   .contact-child form {
     width: 90vw;
   }
@@ -387,18 +398,12 @@ body {
 
   .carousel-caption {
     position: absolute;
-    bottom: -46%;
-    transform: translateY(-50%);
-  }
-
-  #cc1 {
-    position: absolute;
-    bottom: -66%;
+    bottom: -38%;
     transform: translateY(-50%);
   }
 
   .carousel-caption h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .carousel-caption button {
@@ -424,10 +429,6 @@ body {
 
   .top-text {
     margin: 0;
-  }
-  .top-text h1 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
   }
 
   .top-text p {
@@ -475,21 +476,4 @@ body {
   #img-1 {
     margin-left: -1rem;
   }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
