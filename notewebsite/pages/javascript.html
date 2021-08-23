@@ -48,7 +48,9 @@
                   </li> 
                   <li class="nav-item">
                     <!-- <a id="navbar-links" class="nav-link navli2" href="#CSS">Technology</a> -->
-                    <a class="nav-link dropdown-toggle navli2 active" href="#hhhh" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+                    <a style=" background-color: blue;
+                    border-radius: 15px;
+                    color: white;" class="nav-link dropdown-toggle navli2 active" href="#hhhh" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
                     <div id="dropdownitem" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item" href="HTML.html">HTML</a>
                       <a   class="dropdown-item" href="css.html">CSS</a>
@@ -115,6 +117,17 @@
           JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.        
         </p><br>
 
+
+        <h4>
+          Example
+        </h4>
+        <div  style="padding-top: 1rem;padding-bottom: 1rem; margin-right: 100rem;" class="code-eg container-fluid">
+          <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+          </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello JavaScript"</span>;
+                                  </span>
+        </div>
+
+      </div><br>
         <h2>
           Why learn Javascript?
         </h2>
@@ -126,8 +139,160 @@
           JavaScript is somewhat easy to get started with as it is a higher level language, which means JavaScript abstracts away most of the complex details of the machine so you can focus on learning how to program. 
 
         </p>
+<br>
 
+        <br>
+
+      <div class="js-datatype">
+        <h2>
+          Javascript Data Types
+        </h2><br>
+        <table class="table table-bordered table-hover">
+          <caption>List of javascript datatypes</caption>
+          <tr>
+            <th>Data Types</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>String</td>
+            <td>represents textual data</td>
+            <td>'hello', "hello world!" etc</td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>an integer or a floating-point number</td>
+            <td>3, 3.234, 3e-2 etc.</td>
+          </tr>
+          <tr>
+            <td>BigInt</td>
+            <td>an integer with arbitrary precision</td>
+            <td>900719925124740999n , 1n etc.</td>
+          </tr>
+          <tr>
+            <td>Boolean</td>
+            <td>Any of two values: true or false</td>
+            <td>true and false</td>
+          </tr>
+          <tr>
+            <td>undefined</td>
+            <td>a data type whose variable is not initialized</td>
+            <td>let a;</td>
+          </tr>
+          <tr>
+            <td>null</td>
+            <td>denotes a null value</td>
+            <td>let a = null;</td>
+          </tr>
+          <tr>
+            <td>Symbol</td>
+            <td>data type whose instances are unique and immutable</td>
+            <td>let value = Symbol('hello');</td>
+          </tr>
+          <tr>
+            <td>Object</td>
+            <td>key-value pairs of collection of data</td>
+            <td>let student = { };</td>
+          </tr>
+        </table>
       </div>
+      <br>
+      <div  class="js-operators">
+        <h2>
+          Javascript Operators
+        </h2><br>
+        <table class="table table-bordered table-hover">
+          <caption>List of important bootstrap classes</caption>
+          <tr>
+            <th width="20%">Javascript Operators</th>
+            <th width="60%">Uses</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Arithmetic Operators</td>
+            <td>Used to perform arithmetic between variables and/or values.</td>
+            <td>+, -, *, /, ++, %, --</td>
+          </tr>
+          <tr>
+            <td>Assignment Operators</td>
+            <td>Used to assign values to JavaScript variables.</td>
+            <td>=, +=, -=, *=, /=, %=</td>
+          </tr>
+          <tr>
+            <td>String Operators</td>
+            <td>Used to concatenate (add) strings.</td>
+            <td>+, +=</td>
+          </tr>
+          <tr>
+            <td>Comparison Operators</td>
+            <td>Used in logical statements to determine equality or difference between variables or values.</td>
+            <td>==, ===, !=, !==, >, <, >=, <=</td>
+          </tr>
+          <tr>
+            <td>Conditional Operator</td>
+            <td>Assigns a value to a variable based on a condition.</td>
+            <td>variablename = (condition) ? value1:value2</td>
+          </tr>
+          <tr>
+            <td>Logical Operators</td>
+            <td>Used to determine the logic between variables or values.</td>
+            <td>&&, ||, !</td>
+          </tr>
+          <tr>
+            <td>Bitwise Operators</td>
+            <td>Convert any numeric operand in the operation into a 32 bit number.</td>
+            <td>&, |, ~, ^, <<, >></td>
+          </tr>
+        </table>
+      </div><br>
+
+      <h2>
+        A Taste of JavaScript
+      </h2>
+      <h5>
+        Here are some examples of what JavaScript can do:
+      </h5><br>
+      <ul>
+        <li style="font-size: 1.35rem; font-weight: 500;">
+            JavaScript can change content:
+        </li>
+          <div class="code-eg"><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+            </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello JavaScript!"</span>;
+                                    <span
+                                        class="jsnumbercolor" style="color:red">
+                                        </span>
+                                        </span>
+                                </div><br>
+          </div><br>
+
+          <li style="font-size: 1.35rem; font-weight: 500;"> 
+            JavaScript can change styles:
+          </li>
+          <div class="code-eg"><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+              document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span>                        = <span class="jsstringcolor" style="color:brown">"25px"</span>;<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                                          style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor" style="color:brown">"red"</span>;<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(
+                                      <span
+                                          class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">backgroundColor</span> = <span class="jsstringcolor" style="color:brown">"yellow"</span>; </span>
+                                  </div><br>
+          </div><br>
+
+          <li>
+            JavaScript can change attributes:
+          </li>
+          <div class="code-eg"><br>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+            </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"image"</span>).<span class="jspropertycolor" style="color:black">src</span> = <span class="jsstringcolor" style="color:brown">"picture.gif"</span>;
+                                    <span
+                                        class="jsnumbercolor" style="color:red">
+                                        </span>
+                                        </span>
+                                </div><br>
+          </div>
+      </ul>
+      </div>
+
 
     <div style="padding-top: 5rem;" id="#"></div>
     <div class="Contacts">

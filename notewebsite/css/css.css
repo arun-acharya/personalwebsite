@@ -10,6 +10,13 @@ body {
   text-align: justify;
 }
 
+.nav-link:hover {
+  background-color: blue;
+  border-radius: 15px;
+  color: white !important;
+  transition: background-color 0.4s;
+}
+
 /*navbar*/
 #navbar {
   margin: 0;
